@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
+import Ordenes from '../views/Ordenes.vue'
 import store from '../store'
 
 Vue.use(VueRouter)
@@ -19,7 +20,13 @@ const routes = [
     component: Login,
   },
   {
-    path: '/about',
+    path: '/ordenes',
+    name: 'Ordenes',
+    component: Ordenes,
+    meta:{rutaProtegida:true}
+  },
+  {
+    path: '*',
     name: 'About',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route

@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <h3>home</h3>
     <div class="container">
       <div class="row">
@@ -38,6 +39,7 @@ import UltimasDevoluciones from '@/components/home/UltimasOrdenes.vue'
 export default {
   name: 'Home',
   components: {
+
     Jumbo,
     OrdenDiaria,
     OrdenAtrasada,
